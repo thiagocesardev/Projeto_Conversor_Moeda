@@ -23,4 +23,14 @@ main{
     background: #F4F4F4;
     border-radius: 20px;
     margin: 0 auto;
+    padding: 44px;
+}
+ h1{
+ text-align: center;
+ }
+
+.manutencao{
+    Width: 300px;
+    display: block;
+    margin: 20px auto;
 }
