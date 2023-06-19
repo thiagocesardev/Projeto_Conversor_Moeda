@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
- 
+
     <title>Thiago César Dev- Convert Money</title>
 </head>
 
 <body>
 
-    
+
     <img class="logo" src="./assets/logo.gif" alt="logo-thiago-césar-dev-convert-money">
     <main>
         <label>
@@ -26,14 +26,14 @@
         </label>
         <label>
             Converter <b>para</b>
-            <select>
-                <option>US$ Dólar americano</option>
-                <option>€ Euro</option>
+            <select class="currency-select">
+                <option value="dolar">US$ Dólar americano</option>
+                <option value="euro">€ Euro</option>
             </select>
         </label>
         <label>
             Valor
-            <input class="input-currency" placeholder="R$ 10.000,00">
+            <input class="input-currency" placeholder="Digite o valor">
         </label>
 
         <button class="convert-button">Converter</button>
@@ -48,8 +48,8 @@
             <img class="arrow-img" src="./assets/arrow.png" alt="seta">
 
             <div class="currency-box">
-                <img src="./assets/dolar.png" alt="logo-moeda-a-converter">
-                <p class="currency">Dólar</p>
+                <img class="currency-img" src="./assets/dolar.png" alt="logo-moeda-a-converter">
+                <p class="currency" id="currency-name">Dólar Americano</p>
                 <p class="currency-value">US$ 0.0</p>
 
             </div>
@@ -58,4 +58,5 @@
 
 </body>
 <script src="script.js"></script>
+
 </html>
