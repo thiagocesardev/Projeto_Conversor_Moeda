@@ -9,8 +9,8 @@ function convertValues() {
 
 
 
-    const dolarToday = 5.0
-    const euroToday = 5.3
+    const dolarToday = 4.78
+    const euroToday = 5.22
 
 
 
