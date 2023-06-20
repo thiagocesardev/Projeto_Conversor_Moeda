@@ -1,5 +1,6 @@
 const convertButton = document.querySelector(".convert-button")
-const currencySelect = document.querySelector('.currency-select')
+const currencySelectFor = document.querySelector('.currency-select-for')
+const currencySelectIn = document.querySelector('.currency-select-in')
 
 function convertValues() {
 
@@ -11,17 +12,18 @@ function convertValues() {
 
     const dolarToday = 4.78
     const euroToday = 5.22
+    const realToday = 1.00
 
 
 
-    if (currencySelect.value == 'dolar') {
+    if (currencySelectFor.value == 'dolar-for') {
         currencyValueToConverted.innerHTML = new Intl.NumberFormat('en-US', {
             style: 'currency',
             currency: 'USD'
         }).format(inputCurrencyValue / dolarToday)
 
     }
-    if (currencySelect.value == 'euro') {
+    if (currencySelectFor.value == 'euro-for') {
         currencyValueToConverted.innerHTML = new Intl.NumberFormat('de-DE', {
             style: 'currency',
             currency: 'EUR'
@@ -37,28 +39,54 @@ function convertValues() {
 }
 
 
-function changeCurrency (){
-const currencyName = document.getElementById ('currency-name')
-const currencyImage = document.querySelector ('.currency-img')
+
+
+
+
+function changeCurrency() {
+    const currencyNameFor = document.getElementById('currency-name-for')
+    const currencyNameIn = document.getElementById('currency-name-in')
+    const currencyImagefor = document.querySelector('.currency-img-for')
+    const currencyImageIn = document.querySelector('.currency-img-in')
+
+    
+
+    if (currencySelectFor.value == 'dolar-for') {
+        currencyNameFor.innerHTML = 'Dólar americano'
+        currencyImagefor.src = './assets/dolar.png'
+
+    }
+
+    if (currencySelectFor.value == 'euro-for') {
+        currencyNameFor.innerHTML = 'Euro'
+        currencyImagefor.src = './assets/euro.png'
+    }
+
+    if (currencySelectFor.value == 'real-for') {
+        currencyNameFor.innerHTML = 'Real'
+        currencyImagefor.src = './assets/real.png'
+    }
+
+    if (currencySelectIn.value == 'dolar-in') {
+        currencyNameIn.innerHTML = 'Dólar americano'
+        currencyImageIn.src = './assets/dolar.png'
+
+}
+
+if (currencySelectIn.value == 'euro-in') {
+    currencyNameIn.innerHTML = 'Euro'
+    currencyImageIn.src = './assets/euro.png'
+}
+
+if (currencySelectIn.value == 'real-in') {
+    currencyNameIn.innerHTML = 'Real'
+    currencyImageIn.src = './assets/real.png'
+}
    
-if (currencySelect.value == 'dolar'){
-        currencyName.innerHTML = 'Dólar americano'
-        currencyImage.src = './assets/dolar.png'
-
-    }
-
-    if (currencySelect.value == 'euro'){
-        currencyName.innerHTML = 'Euro'
-        currencyImage.src= './assets/euro.png'
-    }
-
-
-   
-
-    }
+}
 
 
 
-
-currencySelect.addEventListener ('change', changeCurrency)
+currencySelectFor.addEventListener('change', changeCurrency)
+currencySelectIn.addEventListener('change', changeCurrency)
 convertButton.addEventListener('click', convertValues)
