@@ -31,6 +31,7 @@ function convertValues() {
 
     }
 
+    
     currencyValueToConvert.innerHTML = new Intl.NumberFormat('pr-BR', {
         style: 'currency',
         currency: 'BRL'
