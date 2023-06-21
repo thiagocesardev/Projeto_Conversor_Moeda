@@ -78,7 +78,7 @@ function changeCurrency() {
     }
 
     if (currencySelectFor.value == 'libra-for') {
-        currencyNameFor.innerHTML = 'LIBRA'
+        currencyNameFor.innerHTML = 'Libra'
         currencyImagefor.src = './assets/libra.png'
     }
 
@@ -100,7 +100,7 @@ if (currencySelectIn.value == 'real-in') {
 
 if (currencySelectIn.value == 'libra-in') {
     currencyNameIn.innerHTML = 'Libra'
-    currencyImagefor.src = './assets/libra.png'
+    currencyImageIn.src = './assets/libra.png'
 }
    
 }
