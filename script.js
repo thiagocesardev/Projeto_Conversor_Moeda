@@ -13,6 +13,7 @@ function convertValues() {
     const dolarToday = 4.78
     const euroToday = 5.22
     const realToday = 1.00
+    const libraToday = 6.09
 
 
 
@@ -28,6 +29,14 @@ function convertValues() {
             style: 'currency',
             currency: 'EUR'
         }).format(inputCurrencyValue / euroToday)
+
+    }
+
+    if (currencySelectFor.value == 'libra-for') {
+        currencyValueToConverted.innerHTML = new Intl.NumberFormat('en-IN', {
+            style: 'currency',
+            currency: 'INR'
+        }).format(inputCurrencyValue / libraToday)
 
     }
 
@@ -68,6 +77,11 @@ function changeCurrency() {
         currencyImagefor.src = './assets/real.png'
     }
 
+    if (currencySelectFor.value == 'libra-for') {
+        currencyNameFor.innerHTML = 'LIBRA'
+        currencyImagefor.src = './assets/libra.png'
+    }
+
     if (currencySelectIn.value == 'dolar-in') {
         currencyNameIn.innerHTML = 'Dólar americano'
         currencyImageIn.src = './assets/dolar.png'
@@ -82,6 +96,11 @@ if (currencySelectIn.value == 'euro-in') {
 if (currencySelectIn.value == 'real-in') {
     currencyNameIn.innerHTML = 'Real'
     currencyImageIn.src = './assets/real.png'
+}
+
+if (currencySelectIn.value == 'libra-in') {
+    currencyNameIn.innerHTML = 'Libra'
+    currencyImagefor.src = './assets/libra.png'
 }
    
 }
