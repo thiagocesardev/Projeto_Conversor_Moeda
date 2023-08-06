@@ -10,10 +10,10 @@ function convertValues() {
 
 
 
-    const dolarToday = 4.78
-    const euroToday = 5.22
+    const dolarToday = 4.87
+    const euroToday = 5.37
     const realToday = 1.00
-    const libraToday = 6.09
+    const libraToday = 6.21
 
 
 
@@ -47,8 +47,6 @@ function convertValues() {
     }).format(inputCurrencyValue)
 
 }
-
-
 
 
 
@@ -104,7 +102,6 @@ if (currencySelectIn.value == 'libra-in') {
 }
    
 }
-
 
 
 currencySelectFor.addEventListener('change', changeCurrency)
