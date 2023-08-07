@@ -10,10 +10,10 @@ function convertValues() {
 
 
 
-    const dolarToday = 4.87
-    const euroToday = 5.37
+    const dolarToday = 4.90
+    const euroToday = 5.39
     const realToday = 1.00
-    const libraToday = 6.21
+    const libraToday = 6.27
 
 
 
