@@ -14,11 +14,6 @@ async function convertValues() {
 
     const dolarToday = data.USDBRL.high
     const euroToday = data.EURBRL.high
-    const libraToday = 6.24
-
-
-
-    
 
 
     if (currencySelectFor.value == 'dolar-for') {
